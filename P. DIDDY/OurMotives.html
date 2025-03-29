@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. Diddy Fan Club - Contact Us</title>
+    <link rel="stylesheet" href="assets/styles.css"> <!-- External CSS file -->
+</head>
+<body>
+    <!-- Navigation Links -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <section id="OurMotives">
+        <h1>Our Motives</h1>
+        <p>WE Just LOVE p DIDDY!!!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 P. Diddy Fan Club. All rights reserved.</p>
+        <details>DON'T SCROLL DOWN : DIDDY HATERS PAST THIS POINT!!!</details>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Input Your HTML Code</h2>
+        <form id="htmlForm">
+        <textarea id="htmlInput" rows="30" cols="200" placeholder="Enter your HTML code here"></textarea><br><br>
+        <button type="button" onclick="openInNewTab()">Run Code in New Tab</button>
+        </form>
+
+        <script>
+        function openInNewTab() {
+            var userCode = document.getElementById("htmlInput").value; // Get the HTML code entered by the user
+            if (userCode.trim() !== "") {
+            var newWindow = window.open(); // Open a new tab
+            newWindow.document.write(userCode); // Write the user input into the new tab
+            newWindow.document.close(); // Close the document to finish loading
+            } else {
+            alert("Please enter some HTML code.");
+            }
+        }
+        </script>
+        
+    </footer>
+
+</body>
+</html>
